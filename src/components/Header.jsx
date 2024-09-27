@@ -4,10 +4,12 @@ import { logo_URL } from './utils/Constants'
 import 'remixicon/fonts/remixicon.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
   const [isOpen,setIsOpen] = useState(false)
+  const navigate = useNavigate()
 
   const manageClick = () =>{
     setIsOpen(!isOpen)
@@ -26,7 +28,7 @@ const Header = () => {
 
     tl1.from('#header>i',{
       opacity:0,
-      top:5,
+      top:5
     })
   })
 
@@ -59,9 +61,9 @@ const Header = () => {
           <i className="ri-menu-line text-white text-xl cursor-pointer" onClick={manageClick}></i>
         }
         {isOpen && 
-          <div id='menubar' className='p-3 absolute top-10 -right-1/2 bg-black text-white h-fit w-1/4'>
-            <h1 className='text-4xl my-3 cursor-pointer'>Home</h1>
-            <h1 className='text-4xl my-3 cursor-pointer'>About</h1>
+          <div id='menubar' className='p-3 absolute top-10 -right-1/2 text-white h-fit w-1/4'>
+            <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/')}>Home</h1>
+            <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/about')}>About</h1>
             <i className="ri-arrow-right-line my-8 text-3xl hover:bg-white hover:text-black hover:rounded-lg hover:p-2" onClick={manageClick}></i>
           </div>
         }
