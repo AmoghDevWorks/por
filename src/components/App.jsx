@@ -25,10 +25,10 @@ const App = () => {
   })
 
   return (
-    <div className='pt-14 h-screen w-screen flex gap-2'>
+    <div className='pt-14 h-screen w-screen flex gap-2 flex-col lg:flex-row items-center '>
       <div id='name' className='w-1/2 h-full flex items-center justify-center gap-4 flex-col'>
         <h1 className='text-5xl text-white font-semibold'>I am</h1>
-        <h1 className='text-5xl text-white font-semibold'>Amogh Kashyap S N</h1>
+        <h1 className='text-5xl text-white font-semibold text-center text-wrap leading-normal'>Amogh Kashyap S N</h1>
       </div>
       <div id='image' className='h-full w-1/2 relative'>
         <img className='object-contain h-full absolute right-0 z-20' src={mainPage_URL} alt='photo'/>

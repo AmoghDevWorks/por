@@ -36,7 +36,7 @@ const Header = () => {
     const tl = gsap.timeline();
 
     tl.to("#menubar",{
-      right:0,
+      right:120,
       duration:1,
     })
 
@@ -61,7 +61,7 @@ const Header = () => {
           <i className="ri-menu-line text-white text-xl cursor-pointer hover:bg-white hover:text-black hover:px-1 rounded-full" onClick={manageClick}></i>
         }
         {isOpen && 
-          <div id='menubar' className='p-3 absolute top-10 -right-1/2 text-white h-fit w-1/4'>
+          <div id='menubar' className='p-3 absolute top-10 lg:-right-1/2 text-white h-fit w-1/4'>
             <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/')}>Home</h1>
             <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/about')}>About</h1>
             <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/skillsandprojects')}>Projects</h1>
