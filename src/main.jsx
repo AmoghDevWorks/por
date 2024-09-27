@@ -5,6 +5,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import About from './components/About.jsx'
 import SkillAndProject from './components/SkillAndProject.jsx'
+import ContactMe from './components/ContactMe.jsx'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Structure = () => {
@@ -32,6 +33,10 @@ const appRouter = createBrowserRouter([
       {
         path:'/skillsandprojects',
         element:<SkillAndProject />
+      },
+      {
+        path:'/contactme',
+        element:<ContactMe />
       }
     ]
   }
