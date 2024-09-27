@@ -58,12 +58,13 @@ const Header = () => {
     <div id='header' className='px-5 lg:px-10 h-12 w-full flex items-center justify-between fixed z-30 bg-inherit'>
         <img className="h-3/4 object-cover rounded-lg" src={logo_URL} alt="logo"/>
         {!isOpen && 
-          <i className="ri-menu-line text-white text-xl cursor-pointer" onClick={manageClick}></i>
+          <i className="ri-menu-line text-white text-xl cursor-pointer hover:bg-white hover:text-black hover:px-1 rounded-full" onClick={manageClick}></i>
         }
         {isOpen && 
           <div id='menubar' className='p-3 absolute top-10 -right-1/2 text-white h-fit w-1/4'>
             <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/')}>Home</h1>
             <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/about')}>About</h1>
+            <h1 className='text-5xl my-5 hover:bg-white hover:text-slate-900 hover:p-1 rounded-lg cursor-pointer' onClick={()=>navigate('/skillsandprojects')}>Projects</h1>
             <i className="ri-arrow-right-line my-8 text-3xl hover:bg-white hover:text-black hover:rounded-lg hover:p-2" onClick={manageClick}></i>
           </div>
         }
