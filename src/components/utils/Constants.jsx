@@ -9,3 +9,7 @@ export const rockPaperScissors_URL = 'https://moonlit-starburst-8352bd.netlify.a
 export const netflix_clone_URL = "https://netflix-e4a5a.web.app/"
 
 export const spotifyClone_URL = 'https://spotifyclone123123.netlify.app/'
+
+export const LinkedIn_URL = "https://www.linkedin.com/in/amogh-kashyap-s-n-20a13a2a5/"
+
+export const gitHub_URL = 'https://github.com/AmoghDevWorks'
